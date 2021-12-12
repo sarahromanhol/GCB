@@ -5,10 +5,10 @@ import { LandingPage } from '../pages/LandingPage/LandingPage'
 import { RegisterPage } from '../pages/RegisterPage/RegisterPage';
 
 
-const Router = () => {
+const Router = ({ativaCor}) => {
     return (
         <div>
-            <Header />
+            <Header ativaCor={ativaCor}/>
             <Routes>
                 <Route exact path="/" element={<LandingPage />} />
                 <Route exact path="/register" element={<RegisterPage />} />
