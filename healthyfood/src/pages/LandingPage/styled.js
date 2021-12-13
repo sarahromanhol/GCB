@@ -102,10 +102,25 @@ export const ThirdContainerText = styled.div`
         font-size: 16px;
         font-weight: 400;
         color: #9E9BAF;
-        width: 510px;
+        width: 385px;
         margin-top: 20px;
         text-align: center;
         line-height: 1.5;
         text-align: left;
+    }
+
+    button {
+        font-family: Muli;
+        background-color: ${primaryColor};
+        color: #FFFFFF;
+        border: none;
+        height: 52px;
+        width: 150px;
+        font-weight: 100;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 30px;
     }
 `
