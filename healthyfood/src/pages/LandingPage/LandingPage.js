@@ -53,7 +53,7 @@ export const LandingPage = () => {
                         A small river named Duden flows by their place 
                         and supplies it with the necessary regelialia.
                     </p>
-                    <button />
+                    <button>Know More</button>
                 </S.ThirdContainerText>
             </div>
 
