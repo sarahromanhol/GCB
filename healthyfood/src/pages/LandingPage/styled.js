@@ -56,6 +56,7 @@ export const SecondContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 30px;
     h3{
         font-family: Montserrat;
         font-size: 32px;
@@ -66,6 +67,7 @@ export const SecondContainer = styled.div`
     h6{
         font-family: muli;
         font-size: 16px;
+        font-weight: 400;
         color: #9E9BAF;
         width: 510px;
         margin-top: 20px;
@@ -74,12 +76,36 @@ export const SecondContainer = styled.div`
     }
 `
 
-export const RecipeCardContainer = styled.div`
+export const RecipeCardsContainer = styled.div`
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    
+    row-gap: 25px;
+    column-gap: 25px;
 `
 
-
-
+export const ThirdContainerText = styled.div`
+    position: absolute;
+    top: 1680px;
+    right: 200px;
+    height: 454px;
+    width: 410px;
+    h3{
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: bold;
+        color: #1D164D;
+        margin-bottom: 40px;
+    }
+    p{
+        font-family: muli;
+        font-size: 16px;
+        font-weight: 400;
+        color: #9E9BAF;
+        width: 510px;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 1.5;
+        text-align: left;
+    }
+`
