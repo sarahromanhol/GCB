@@ -5,6 +5,8 @@ import Router from './routes/Router'
 
 
 function App() {
+
+  // configuração de scroll do header
   const [ativaCor, setAtivaCor] = useState(false)
 
   useEffect(() => {
