@@ -13,9 +13,8 @@ export const HeaderContainer = styled.header`
     align-items: center;
     position: fixed;
     transition: all ease 0.3s;
+    z-index: 3;
 `
-
-
 
 export const Logo = styled.h2`
     justify-self: center;
