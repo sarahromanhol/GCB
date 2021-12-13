@@ -20,7 +20,7 @@ h2{
 export const FirstPic = styled.img`
     position: absolute;
     top: 0px;
-    right: 0px;
+    right: -18px;
     z-index: 1;
 `
 
@@ -57,6 +57,7 @@ export const SecondContainer = styled.div`
     flex-direction: column;
     align-items: center;
     padding-top: 30px;
+    background-color: #FAFAFC;
     h3{
         font-family: Montserrat;
         font-size: 32px;
@@ -122,5 +123,100 @@ export const ThirdContainerText = styled.div`
         border-radius: 5px;
         text-align: center;
         margin-top: 30px;
+        box-shadow: 0px 1px 20px 2px ${primaryColor};
     }
+`
+
+export const FourthContainer = styled.div`
+    height: 768px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    background-color: #FAFAFC;
+    h3{
+        font-family: Montserrat;
+        font-size: 32px;
+        font-weight: bold;
+        color: #1D164D;
+        margin-bottom: 0px;
+    }
+    h6{
+        font-family: muli;
+        font-size: 16px;
+        font-weight: 400;
+        color: #9E9BAF;
+        width: 510px;
+        margin-top: 20px;
+        text-align: center;
+        line-height: 1.5;
+    }
+`
+
+export const Carousel = styled.div`
+    width: auto;
+    display: flex;
+    align-items: center;
+    height: 460px;
+    margin-left: 200px;
+    margin-right: 100px;
+`
+
+
+
+export const FifthContainer = styled.div`
+    height: 672px;
+    width: 100vw;
+    h2 {
+        font-family: Montserrat;
+        color: #1D164D;
+        height: 200px;
+        width: 350px;
+        font-size: 32px;
+        font-weight: bold;
+        position: absolute;
+        left: 137px;
+        top: 3300px;
+    }
+`
+
+export const EmailInput = styled.div`
+    display: flex;
+    position: absolute;
+    left: 137px;
+    top: 3450px;
+
+    input {
+        height: 52px;
+        width: 343px;
+        border-radius: 5px;
+        border: 1px solid #2D3561;
+        font-family: muli;
+        font-size: 16px;
+        padding-left: 10px;
+    }
+
+    button {
+        background-color: ${primaryColor};
+        height: 54px;
+        width: 93px;
+        padding: 20px;
+        border-radius: 5px;
+        margin-left: 20px;
+        font-family: muli;
+        font-size: 16px;
+        color: #FFFFFF;
+        border: none;
+        box-shadow: 0px 1px 20px 2px ${primaryColor};
+        cursor: pointer;
+    }
+`
+
+export const ThirdPic = styled.img`
+    position: absolute;
+    top: 3095px;
+    right: -18px;
+    z-index: 1;
+    height: 672px;
 `
