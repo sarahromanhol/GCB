@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 import { primaryColor } from '../../constants/colors'
 
+
+// -------------- Primeiro container ----------------------
 export const FirstContainer = styled.div`
 height: 768px;
 width: 100vw;
@@ -50,6 +52,9 @@ export const SearchRecipeInput = styled.div`
     }
 `
 
+
+
+// -------------- Segundo container ----------------------
 export const SecondContainer = styled.div`
     height: 768px;
     width: 100vw;
@@ -85,6 +90,10 @@ export const RecipeCardsContainer = styled.div`
     column-gap: 25px;
 `
 
+
+
+
+// -------------- Terceiro container ----------------------
 export const ThirdContainerText = styled.div`
     position: absolute;
     top: 1680px;
@@ -127,6 +136,10 @@ export const ThirdContainerText = styled.div`
     }
 `
 
+
+
+
+// -------------- Quarto container ----------------------
 export const FourthContainer = styled.div`
     height: 768px;
     width: 100vw;
@@ -160,11 +173,13 @@ export const Carousel = styled.div`
     align-items: center;
     height: 460px;
     margin-left: 200px;
-    margin-right: 100px;
+    margin-right: 200px;
 `
 
 
 
+
+// -------------- Quinto container ----------------------
 export const FifthContainer = styled.div`
     height: 672px;
     width: 100vw;
