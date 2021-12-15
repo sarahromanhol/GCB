@@ -3,10 +3,13 @@ import { primaryColor } from '../../constants/colors'
 import registerPageBG from '../../assets/imgs/registerBG.svg'
 
 export const RegisterPageContainer = styled.div`
-    height: 100vh;
-    width: 100vw;
-    position: relative;
-
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     &:after {
         content: "";
         position: absolute;
@@ -22,20 +25,16 @@ export const RegisterPageContainer = styled.div`
         -webkit-background-size: cover;
         -moz-background-size: cover;
         background-size: cover;
+        @media(max-width: 500px) {
+            height: 853px;
+    } 
     }
-    /* background-image: url(${registerPageBG});
-    background-size: cover; 
-    opacity: 0.5; */
 `
 
 export const Form = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
-    top: 280px;
-    /* right: 100px; */
-
     input {
         height: 52px;
         width: 343px;
@@ -50,7 +49,6 @@ export const Form = styled.div`
         box-shadow: 1px 1px 20px 2px #e4cece;
         color: black;
     }
-
     button {
         background-color: ${primaryColor};
         height: 52px;
@@ -66,6 +64,12 @@ export const Form = styled.div`
         cursor: pointer;
         box-shadow: 0px 1px 20px 1px ${primaryColor};
     }
+    @media(max-width: 500px) {
+        margin-top: 150px;
+        input {
+            width: 300px;
+        }
+    } 
 `
 
 export const BirthDateContainer = styled.div`
@@ -77,12 +81,13 @@ export const BirthDateContainer = styled.div`
 `
 
 export const SubmitedFormMessage = styled.p`
-    position: absolute;
-    top: 280px;
-    right: 600px;
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 700;
     color: #2D3561;
+    @media(max-width: 500px) {
+        font-size: 32px;
+        text-align: center;
+    } 
 `
 

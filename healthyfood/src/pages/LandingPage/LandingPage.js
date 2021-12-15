@@ -22,15 +22,23 @@ import HorizontalScroll from "react-scroll-horizontal"
 
 
 
+
+
+
+
+
+
 export const LandingPage = () => {
     return (
         <div>
             <S.FirstContainer>
-                <h2>Ready for Trying a new recipe?</h2>
-                <S.SearchRecipeInput>
-                    <input placeholder='Search healthy recipes' />
-                    <img src={lupa} />
-                </S.SearchRecipeInput>
+                <S.TitleAndInputContainer>
+                    <h2>Ready for Trying a new recipe?</h2>
+                    <S.SearchRecipeInput>
+                        <input placeholder='Search healthy recipes' />
+                        <img src={lupa} />
+                    </S.SearchRecipeInput>
+                </S.TitleAndInputContainer>
                 <S.FirstPic src={firstPic} alt='Ilustração' />
             </S.FirstContainer>
 
@@ -42,14 +50,26 @@ export const LandingPage = () => {
                     the blind texts.
                 </h6>
                 <S.RecipeCardsContainer>
-                    <RecipeCard image={comida_1} title={'Broccoli Salad with Bacon'} />
-                    <RecipeCard image={comida_2} title={'Classic Beef Burgers'} />
-                    <RecipeCard image={comida_3} title={'Classic Potato Salad'} />
-                    <RecipeCard image={comida_4} title={'Cherry Cobbler on the Grill'} />
+                    <RecipeCard
+                        image={comida_1}
+                        title={'Broccoli Salad with Bacon'}
+                    />
+                    <RecipeCard
+                        image={comida_2}
+                        title={'Classic Beef Burgers'}
+                    />
+                    <RecipeCard
+                        image={comida_3}
+                        title={'Classic Potato Salad'}
+                    />
+                    <RecipeCard
+                        image={comida_4}
+                        title={'Cherry Cobbler on the Grill'}
+                    />
                 </S.RecipeCardsContainer>
             </S.SecondContainer>
 
-            <div>
+            <S.ThirdContainer>
                 <img src={secondPic} />
                 <S.ThirdContainerText>
                     <h3>The best services ready To serve you</h3>
@@ -67,7 +87,7 @@ export const LandingPage = () => {
                     </p>
                     <button>Know More</button>
                 </S.ThirdContainerText>
-            </div>
+            </S.ThirdContainer>
 
             <S.FourthContainer>
                 <h3>Read Our Blog</h3>
@@ -107,11 +127,13 @@ export const LandingPage = () => {
             </S.FourthContainer>
 
             <S.FifthContainer>
-                <h2>Join our membership to get special offer</h2>
-                <S.EmailInput>
-                    <input placeholder='Enter your email address' />
-                    <button>Join</button>
-                </S.EmailInput>
+                <S.TitleAndInputContainer2>
+                    <h2>Join our membership to get special offer</h2>
+                    <S.EmailInput>
+                        <input placeholder='Enter your email address' />
+                        <button>Join</button>
+                    </S.EmailInput>
+                </S.TitleAndInputContainer2>
                 <S.ThirdPic src={thirdPic} />
             </S.FifthContainer>
         </div>

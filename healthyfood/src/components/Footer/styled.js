@@ -9,6 +9,7 @@ export const Footer = styled.footer`
     grid-template-rows: 1fr;
     align-items: center;
     justify-items: center;
+    padding: 5px 20px;
     p {
         color: #1D164D;
         font-family: muli;
@@ -21,5 +22,14 @@ export const Footer = styled.footer`
         font-size: 16px;
         background-color: transparent;
         margin-right: 10px;
+    }
+    @media(max-width: 500px) {
+        p {
+            font-size: 12px;
+        }
+        button {
+            font-size: 12px;
+            margin-top: 10px;
+        }
     }
 `
