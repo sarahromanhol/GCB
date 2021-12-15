@@ -1,6 +1,8 @@
 import styled from 'styled-components'
+import { primaryColor } from '../../constants/colors'
 
 export const Footer = styled.footer`
+    background-color: ${props => props.coloreFooter ? primaryColor : 'none'};
     height: 103px;
     display: grid;
     grid-template-columns: 1fr 1fr;

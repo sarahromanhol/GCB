@@ -11,8 +11,8 @@ const Router = ({ativaCor}) => {
         <div>
             <Header ativaCor={ativaCor}/>
             <Routes>
-                <Route exact path="/" element={<LandingPage />} />
-                <Route exact path="/register" element={<RegisterPage />} />
+                <Route id='1' exact path="/" element={<LandingPage />} />
+                <Route id='2' exact path="/register" element={<RegisterPage />} />
                 <Route element={<div>Página não encontrada</div>} />
             </Routes>
             <Footer />

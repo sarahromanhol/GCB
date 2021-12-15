@@ -1,12 +1,27 @@
 import { ThemeProvider } from "@mui/material";
 import { useEffect, useState } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import Router from './routes/Router'
-import { useNavigate } from "react-router-dom";
+
 
 
 
 function App() {
+
+  // configuração da cor do footer
+  const [coloreFooter, setColoreFooter] = useState(false)
+
+  useEffect(() => {
+    const preenchendoFooter = () => {
+      if (Router.Route.id === 2) {
+        setColoreFooter(true)
+      } else {
+        setColoreFooter(false)
+      }
+    }
+  }, [])
+
+
   // configuração de scroll do header
   const [ativaCor, setAtivaCor] = useState(false)
 
@@ -23,10 +38,13 @@ function App() {
   }, [])
 
 
+
+
+
   return (
     <ThemeProvider>
       <BrowserRouter>
-        <Router ativaCor={ativaCor}/>
+        <Router ativaCor={ativaCor}  coloreFooter={coloreFooter} />
       </BrowserRouter>
     </ThemeProvider>
   );

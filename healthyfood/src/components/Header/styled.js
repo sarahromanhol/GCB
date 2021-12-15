@@ -18,6 +18,10 @@ export const HeaderContainer = styled.header`
     @media(max-width: 800px) {
     padding-left: 25px;
     height: 120px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 30px;
     }
 `
 
@@ -66,4 +70,9 @@ export const RegisterButton = styled.button`
     cursor: pointer;
     border-radius: 5px;
     text-align: center;
+
+    @media(max-width: 800px) {
+        font-size: 20px;
+        margin-right: 60px;
+    }
 `

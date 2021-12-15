@@ -29,6 +29,7 @@ export const FirstPic = styled.img`
         position: absolute;
         top: 0px;
         left: -150px;
+        z-index: 1;
     } 
 `
 
