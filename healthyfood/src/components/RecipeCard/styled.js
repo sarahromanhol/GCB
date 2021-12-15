@@ -35,4 +35,25 @@ export const RecipeCard = styled.div`
         border-radius: 7px;
         text-align: center;
     }
+
+    @media(max-width: 500px) {
+        width: 70%;
+        height: 130px;
+        img {
+            width: 145px;
+            height: 132px;
+            margin-right: 9px;
+            align-self: flex-start;
+        }
+        p {
+            font-size: 14px;
+            margin-top: 25px;
+            width: 100px;
+        }
+        button {
+            height: 30px;
+            width: 80px;
+            font-size: 12px;
+        }
+    } 
 `

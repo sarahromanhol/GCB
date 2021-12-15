@@ -29,6 +29,16 @@ export const BlogCard = styled.div`
         font-weight: 400;
         color: #9E9BAF;
     }
+    @media(max-width: 500px) {
+        width: 290px;
+        height: 420px;
+        h6 {
+            font-size: 16px;
+        }
+        div {
+            margin-top: 10px;
+        }
+    }
 `
 
 export const UserIcon = styled.img`

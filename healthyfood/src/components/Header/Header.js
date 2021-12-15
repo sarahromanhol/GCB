@@ -10,9 +10,9 @@ export const Header = ({ativaCor}) => {
         <S.HeaderContainer ativaCor={ativaCor}>
             <S.Logo ativaCor={ativaCor} onClick={goTo.LandingPage}>Healthy Food</S.Logo>
             <S.ButtonsContainer>
-                <S.GeneralHeaderButton>HEALTHY RECIPES</S.GeneralHeaderButton>
-                <S.GeneralHeaderButton>BLOG</S.GeneralHeaderButton>
-                <S.GeneralHeaderButton>JOIN</S.GeneralHeaderButton>
+                <S.GeneralHeaderButton ativaCor={ativaCor} >HEALTHY RECIPES</S.GeneralHeaderButton>
+                <S.GeneralHeaderButton ativaCor={ativaCor} >BLOG</S.GeneralHeaderButton>
+                <S.GeneralHeaderButton ativaCor={ativaCor} >JOIN</S.GeneralHeaderButton>
                 <S.RegisterButton onClick={goTo.Register} >REGISTER</S.RegisterButton>
             </S.ButtonsContainer>
         </S.HeaderContainer>
