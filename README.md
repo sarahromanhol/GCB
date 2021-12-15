@@ -1,28 +1,34 @@
-Bom dia Candidato,
+# HealthyFood
 
-Tudo bem?
+Aplicação criada para teste front-end, cumprindo os requisitos de:
 
-Para darmos continuidade em seu processo seletivo, pedimos que você realize o seguinte teste:
+- Fazer uma Landing Page baseada na estrutura fornecida
+- Fazer uma Register Page com validação dos dados, preenchimento automático de endereço via API dos correios
+- Tornar o site responsivo
+- Salvar os dados no localStorage
 
-1.	 Desenvolver o site que está em anexo utilizando toda a estrutura do React, o site tem que ser 100% responsivo, iremos avaliar bem a responsividade.
+## Link do site
 
-2.	 Criar a tela de cadastro baseada na tela inicial, o cadastro precisa receber os dados abaixo: 
+https://healthyfood.surge.sh/
 
-      a.	Nome
+## Framework utilizado
 
-      b.	Data de nascimento
+- Reactjs
 
-      c.	CPF
+## Linguagens utilizadas
 
-      d.	CEP 
+- JavaScript
+- HTML
+- CSS
 
-      i.	Utilizar a API dos correios para preencher os demais campos que compõe o endereço.
+## Bibliotecas utilizadas
 
-      e.	Validação dos campos
-      
-      f.	Armazenar os dados do formulário no local storage e Cookies
+- axios
+- styled-components
+- react-router-dom
+- react-scroll-horizontal
 
 
-3.	 Não precisa utilizar banco de dados
+#### Desenvolvido por: Sarah Romanhol Falconiere
 
-Ao final, criar um repositório público e enviar o link e se possível subir o site em um domínio gratuito.
+
