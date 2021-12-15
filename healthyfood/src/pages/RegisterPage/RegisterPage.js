@@ -4,7 +4,8 @@ import * as S from './styled'
 
 export const RegisterPage = () => {
     const [showAddress, setShowAddress] = useState(false)
-    const [form, onChange, clear] = useForm({
+    const [formSubmited, setFormSubmited] = useState(false)
+    const [form, onChange] = useForm({
         nome: "",
         dataNascimento: "",
         cpf: "",
@@ -13,9 +14,10 @@ export const RegisterPage = () => {
         numero: "",
         complemento: "",
         bairro: "",
-        cidade: "",
+        localidade: "",
         uf: ""
     })
+
 
     const changeFormInputs = () => {
         if (
@@ -24,26 +26,27 @@ export const RegisterPage = () => {
             form.cpf === ''
         ) {
             window.alert("Preencha corretamente os campos abaixo")
+        } else if (form.cpf.length !== 11) {
+            window.alert("O CPF deve conter 11 dígitos (somente números)")
         } else {
             setShowAddress(!showAddress)
         }
-        // setShowAddress(!showAddress)
     }
 
-    const volta = () => {
-        setShowAddress(!showAddress)
-    }
 
     const onSubmitForm = (event) => {
         event.preventDefault()
-        setShowAddress(!showAddress)
-        // signup(form, clear, history, setRightbuttonText)
+        console.log(form)
+        setFormSubmited(!formSubmited)
     }
 
 
     return (
         <S.RegisterPageContainer>
-            <form onSubmit={onSubmitForm}>
+            {formSubmited ? 
+            <S.SubmitedFormMessage>Cadastro efetuado com sucesso!</S.SubmitedFormMessage>
+        :
+        <form onSubmit={onSubmitForm}>
                 {showAddress ?
                     <S.Form>
                         <input
@@ -81,8 +84,8 @@ export const RegisterPage = () => {
                             required
                         />
                         <input
-                            name={"cidade"}
-                            value={form.cidade}
+                            name={"localidade"}
+                            value={form.localidade}
                             onChange={onChange}
                             placeholder={"Cidade"}
                             required
@@ -96,11 +99,6 @@ export const RegisterPage = () => {
                         />
                         <button
                             type={"submit"}
-                            fullWidth
-                            variant={"contained"}
-                            color="primary"
-                            margin={"normal"}
-                            onClick={volta}
                         >
                             Register
                         </button>
@@ -132,6 +130,8 @@ export const RegisterPage = () => {
                             onChange={onChange}
                             placeholder={"CPF - Somente números"}
                             required
+                            pattern="\d{3}\.?\d{3}\.?\d{3}-?\d{2}"
+                            
                         />
                         <button
                             onClick={changeFormInputs}
@@ -141,10 +141,11 @@ export const RegisterPage = () => {
                         </button>
                     </S.Form>
                 }
-
-
             </form>
+        }
         </S.RegisterPageContainer>
     )
 }
+
+//[A-Za-z]{3}
 

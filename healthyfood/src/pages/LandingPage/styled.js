@@ -24,6 +24,12 @@ export const FirstPic = styled.img`
     top: 0px;
     right: -18px;
     z-index: 1;
+
+    @media(max-width: 800px) {
+        position: absolute;
+        top: 0px;
+        left: -150px;
+    } 
 `
 
 export const SearchRecipeInput = styled.div`

@@ -21,6 +21,7 @@ import user_4 from '../../assets/imgs/user_4.svg'
 import HorizontalScroll from "react-scroll-horizontal"
 
 
+
 export const LandingPage = () => {
     return (
         <div>

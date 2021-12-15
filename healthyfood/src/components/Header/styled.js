@@ -14,6 +14,11 @@ export const HeaderContainer = styled.header`
     position: fixed;
     transition: all ease 0.3s;
     z-index: 3;
+
+    @media(max-width: 800px) {
+    padding-left: 25px;
+    height: 120px;
+    }
 `
 
 export const Logo = styled.h2`
@@ -42,6 +47,11 @@ export const GeneralHeaderButton = styled.button`
     border: none;
     font-size: 16px;
     cursor: pointer;
+
+    @media(max-width: 800px) {
+        font-size: 20px;
+        margin-right: 25px;
+    }
 `
 
 export const RegisterButton = styled.button`

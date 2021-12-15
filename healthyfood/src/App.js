@@ -2,10 +2,11 @@ import { ThemeProvider } from "@mui/material";
 import { useEffect, useState } from "react";
 import { BrowserRouter } from "react-router-dom";
 import Router from './routes/Router'
+import { useNavigate } from "react-router-dom";
+
 
 
 function App() {
-
   // configuração de scroll do header
   const [ativaCor, setAtivaCor] = useState(false)
 
